@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Django | Polling App</title>
 {% load staticfiles %}
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
     <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -18,7 +21,7 @@
   <p>Django is a python web framework and the Bootstrap is used for the front end design </p>
 </div>
 <div class="container">
-
+    <div style="padding:320px 0px 200px 0px">
     <div class="jumbotron">
     {% if latest_question_list %}
     <ul>
@@ -31,6 +34,7 @@
 {% endif %}
     </div>
 
+</div>
 </div>
 
 </body>
